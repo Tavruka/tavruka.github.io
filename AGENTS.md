@@ -24,3 +24,6 @@
 - Por instrução do utilizador, a publicação principal pertence agora à conta Tavruka e ao repositório tavruka.github.io. Usar https://tavruka.github.io/; a conta pessoal SergioMatos20 deixa de ser o destino principal.
 
 - Configurar o site tavruka.github.io na conta AdSense; o registo anterior sergiomatos20.github.io não verifica este domínio.
+
+## Contacto oficial
+- Usar tavrukaapp@gmail.com em contactos, links mailto e política de privacidade do website. Não voltar a introduzir endereços pessoais anteriores.
