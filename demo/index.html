@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Play the 15-level demo — Tavruka</title><meta name="description" content="Play 15 levels of Tavruka across the Tribal, Bronze and Iron Ages. Normal mode."><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4143591580968042" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #141311; }
+      body { display: grid; place-items: center; min-height: 100dvh; }
+      #unity-canvas { display: block; width: min(100vw, 177.7778dvh); height: min(100dvh, 56.25vw); touch-action: none; background: #260f12; }
+    </style>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <p id="loading" role="status" aria-live="polite" style="position:fixed;inset:40% 0 auto;color:#f3dfb4;font:18px system-ui;text-align:center;z-index:1">Loading Tavruka… First load: about 99 MB.</p><canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
+    <script src="Build/Build.loader.js?v=20261112-landscape"></script>
+    <script>
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        arguments: [],
+        dataUrl: "Build/Build.data.unityweb?v=20261112-landscape",
+        frameworkUrl: "Build/Build.framework.js.unityweb?v=20261112-landscape",
+        codeUrl: "Build/Build.wasm.unityweb?v=20261112-landscape",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Tavruka",
+        productName: "Tavruka Web Demo 15",
+        productVersion: "2026.11.11",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      }, (progress) => { document.getElementById("loading").textContent = "Loading Tavruka · " + Math.round(progress * 100) + "%"; }).then((unityInstance) => { document.getElementById("loading").hidden = true;
+      }).catch((message) => {
+        document.getElementById("loading").textContent = "The demo could not start. Please reload and try again. " + message;
+      });
+    </script>
+  </body>
+</html>
+
+
